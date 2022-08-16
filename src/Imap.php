@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Balance\PhpImap;
+namespace Balnce1230\PhpImap;
 
 use const CL_EXPUNGE;
 use const IMAP_CLOSETIMEOUT;
@@ -15,7 +15,7 @@ use const IMAP_WRITETIMEOUT;
 use InvalidArgumentException;
 use const NIL;
 use const PHP_MAJOR_VERSION;
-use Balance\PhpImap\Exceptions\ConnectionException;
+use Balnce1230\PhpImap\Exceptions\ConnectionException;
 use const SE_FREE;
 use const SORTARRIVAL;
 use const SORTCC;

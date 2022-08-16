@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Balance\PhpImap;
+namespace Balnce1230\PhpImap;
 
 use const CL_EXPUNGE;
 use function count;
@@ -34,8 +34,8 @@ use const OP_SECURE;
 use const OP_SHORTCACHE;
 use const OP_SILENT;
 use const PATHINFO_EXTENSION;
-use Balance\PhpImap\Exceptions\ConnectionException;
-use Balance\PhpImap\Exceptions\InvalidParameterException;
+use Balnce1230\PhpImap\Exceptions\ConnectionException;
+use Balnce1230\PhpImap\Exceptions\InvalidParameterException;
 use const SA_ALL;
 use const SE_FREE;
 use const SE_UID;

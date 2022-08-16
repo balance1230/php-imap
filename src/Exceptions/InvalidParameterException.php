@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Balance\PhpImap\Exceptions;
+namespace Balnce1230\PhpImap\Exceptions;
 
 use Exception;
 

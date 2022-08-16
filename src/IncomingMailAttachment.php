@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Balance\PhpImap;
+namespace Balnce1230\PhpImap;
 
 use const FILEINFO_NONE;
 use finfo;
