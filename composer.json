@@ -1,0 +1,17 @@
+{
+    "name": "balance/php-imap",
+    "type": "vendor",
+    "autoload": {
+        "psr-4": {
+            "Balance\\PhpImap\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "balance",
+            "email": "742512260@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
