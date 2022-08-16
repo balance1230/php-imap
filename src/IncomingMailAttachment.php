@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Balnce1230\PhpImap;
 
+use PHPUnit\Util\Exception;
 use const FILEINFO_NONE;
 use finfo;
 use UnexpectedValueException;
@@ -127,12 +128,24 @@ class IncomingMailAttachment
      * @param int $fileinfo_const Any predefined constant. See https://www.php.net/manual/en/fileinfo.constants.php
      *
      * @psalm-param fileinfoconst $fileinfo_const
+     * @return string
      */
     public function getFileInfo(int $fileinfo_const = FILEINFO_NONE): string
     {
-        $finfo = new finfo($fileinfo_const);
+        $contents=$this->getContents();
+        try {
+            $data= (new finfo($fileinfo_const))->buffer($contents);
+        }catch (\Exception $e)
+        {
+            if(substr_count($e->getMessage(),'name use count (30) exceeded'))
+            {
+                $data=$contents;
+            }else{
+                throw new Exception($e->getMessage());
+            }
+        }
+        return $data;
 
-        return $finfo->buffer($this->getContents());
     }
 
     /**
