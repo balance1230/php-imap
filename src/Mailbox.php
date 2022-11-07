@@ -1964,6 +1964,7 @@ class Mailbox
                     'attributes' => $item->attributes,
                     'delimiter' => $item->delimiter,
                     'shortpath' => \substr($name, $name_pos + 1),
+                    'orgpath' => \substr($item_name, $name_pos + 1),
                 ];
             }
         }
